@@ -1,0 +1,1 @@
+print("varbl name is",__name__)

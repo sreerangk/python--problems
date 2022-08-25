@@ -1,33 +1,22 @@
-erro
 
+# A Sample class with init method
+class Person:
+ 
+    # init method or constructor
+    def __init__(self, name):
+        self.name = name
+ 
+    # Sample Method
+    def say_hi(self):
+        print('Hello, my name is', self.name)
+ 
+ 
+# Creating different objects
 
-
-
-import numpy as np 
-a=[]
-b=[]
-c=[]
-row =int(input("enter therow"))
-col=int(input("eter the columns"))
-for i in range(row):
-    row=[]
-    for j in range(col):
-        l1=int(input())
-        row.append(l1)
-    a.append(row)
-print("display array in metrix form")
-for i in range(row):
-    for j in range(col):
-        print(a[i][j],end="")
-for i in range(row):
-    for j in range(col):
-        print(b[i][j],end="")
-    print()
-a = np.array(a)
-b= np.array(b)
-c= np.array(a+b)
-print("display sun of 2 array")
-for i in range(row):
-    for j in range(col):
-        print(c[i][j],end="")
-    print()
+p1 = Person('Nikhil')
+p2 = Person('Abhinav')
+p3 = Person('Anshul')
+ 
+p1.say_hi()
+p2.say_hi()
+p3.say_hi()
